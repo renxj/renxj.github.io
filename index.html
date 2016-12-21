@@ -1,880 +1,238 @@
-<!doctype html>
-
-
-
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="renxj">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="renxj 的杂记空间"/>
+  <meta property="og:description" content="这只是一个习惯的开始~~坚持~" />
+  <meta property="og:site_name" content="renxj 的杂记空间"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://yoursite.comundefined"/>
   
-
-
-<html class="theme-next muse use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
+    <link rel="alternate" href="/atom.xml" title="renxj 的杂记空间" type="application/atom+xml">
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
+    <link rel="icon" href="/favicon.png">
   
 
-  
-    
-    
-  
+  <!-- Site Title -->
+  <title>renxj 的杂记空间</title>
 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
   
+  <link rel="stylesheet" href="/css/style.light.css">
 
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <!-- Google Analytics -->
   
 
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
-
-
-
-
-
-
-<meta name="description" content="这只是一个习惯的开始~~坚持~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="renxj 的杂记空间">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="renxj 的杂记空间">
-<meta property="og:description" content="这只是一个习惯的开始~~坚持~">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="renxj 的杂记空间">
-<meta name="twitter:description" content="这只是一个习惯的开始~~坚持~">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-
-  <link rel="canonical" href="http://yoursite.com/"/>
-
-
-
-
-
-  <title> renxj 的杂记空间 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-
+  <body>
+    <!-- Page Header -->
 
 
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">renxj 的杂记空间</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-    
-      <p class="site-subtitle">小标题小标题小标题</p>
-    
-</div>
-
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">renxj 的杂记空间</p>
+          <p class="subtitle">小标题小标题小标题</p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/21/冬至/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="renxj">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="renxj 的杂记空间">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="renxj 的杂记空间" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/21/冬至/" itemprop="url">
-                  冬至
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
                 </a>
-              
+              </li>
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-21T11:22:24+08:00">
-                2016-12-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/life/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="冬至为啥吃饺子？原来这么有文化"><a href="#冬至为啥吃饺子？原来这么有文化" class="headerlink" title="冬至为啥吃饺子？原来这么有文化"></a>冬至为啥吃饺子？原来这么有文化</h3><blockquote>
-<p>在我国古代对冬至很重视，冬至被当作一个较大节日，曾有“冬至大如年”的说法，而且有庆贺冬至的习俗。《汉书》中说：“冬至阳气起，君道长，故贺。”人们认为：过了冬至，白昼一天比一天长，阳气回升，是一个节气循环的开始，也是一个吉日，应该庆贺。《晋书》上记载有“魏晋冬至日受万国及百僚称贺……其仪亚于正旦。”说明古代对冬至日的重视。</p>
-<p>每年农历冬至这天，不论贫富，饺子是必不可少的节日饭。谚云：“十月一，冬至到，家家户户吃水饺。”北方有“冬至饺子夏至面”的说法，你知道冬至为什么吃饺子吗？</p>
-<p>冬至为什么要吃饺子？</p>
-<p>饺子原名“娇耳”，是我国医圣张仲景首先发明的。</p>
-<p>东汉末年，各地灾害严重，很多人身患疾病。南阳有个名医叫张机，字仲景，自幼苦学医书，博采众长，成为中医学的奠基人。张仲景不仅医术高明，什么疑难杂症都能手到病除，而且医德高尚，无论穷人和富人，他都认真施治，挽救了无数的性命。</p>
-<p>张仲景在长沙为官时，常为百姓除疾医病。有一年当地瘟疫盛行，他在衙门口垒起大锅，舍药救人，深得长沙人民的爱戴。张仲景从长沙告老还乡后，走到家乡白河。岸边，见很多穷苦百姓忍饥受寒，耳朵都冻烂了。他心里非常难受，决心救治他们。张仲景回到家，求医的人特别多，他忙的不可开交，但他心里总挂记着那些冻烂。耳朵的穷百姓。他仿照在长沙的办法，叫弟子在南阳东关的一块空地上搭起医棚，架起大锅，在冬至那天开张，向穷人舍药治伤。</p>
-<p>张仲景在长沙为官时，常为百姓除疾医病。有一年当地瘟疫盛行，他在衙门口垒起大锅，舍药救人，深得长沙人民的爱戴。张仲景从长沙告老还乡后，走到家乡白河。岸边，见很多穷苦百姓忍饥受寒，耳朵都冻烂了。他心里非常难受，决心救治他们。张仲景回到家，求医的人特别多，他忙的不可开交，但他心里总挂记着那些冻烂。耳朵的穷百姓。他仿照在长沙的办法，叫弟子在南阳东关的一块空地上搭起医棚，架起大锅，在冬至那天开张，向穷人舍药治伤。</p>
-<p>张仲景舍药一直持续到大年三十。大年出一，人们庆祝新年，也庆祝烂耳康复，就仿娇耳的样子做过年的食物，并在初一早上吃。人们称这种食物为“饺耳”、“饺子”或偏食，在冬至和年初一吃，以纪念张仲景开棚舍药和治愈病人的日子。</p>
-<p>张仲景距今已近1800年，但他折“祛寒娇耳汤”的故事一直在民间广为流传。每逢冬至和大年初一，人们吃着饺子，心里仍记挂着张仲景的恩情。今天，我们用不着用娇耳朵来治冻烂的耳朵了，但饺子却已成了人们最常见、最爱吃的食品。</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/20/first-blog/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="renxj">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="renxj 的杂记空间">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="renxj 的杂记空间" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/20/first-blog/" itemprop="url">
-                  First Blog
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
                 </a>
-              
+              </li>
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-20T17:15:00+08:00">
-                2016-12-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="最近的趣事"><a href="#最近的趣事" class="headerlink" title="最近的趣事"></a>最近的趣事</h3><blockquote>
-<p>12月17日参加了D2前端技术论坛分享会，接触了一些新概念，Fusion是我最喜欢的一个主题！期待它的开源。周源（远舟）作为讲师讲的很成功，大家都十分感兴趣，准备再进行一个线下交流会，目前时间还不确定。O(∩_∩)O哈哈~可以近距离接触啦~~~</p>
-</blockquote>
-<h3 id="D2分享的课题有"><a href="#D2分享的课题有" class="headerlink" title="D2分享的课题有"></a>D2分享的课题有</h3><h4 id="1号厅"><a href="#1号厅" class="headerlink" title="1号厅"></a>1号厅</h4><ul>
-<li>Fusion Design-解构设计，抽象工程</li>
-<li>前端服务化：通向零成本开发之路</li>
-<li>微信小程序解决方案</li>
-<li>Web3D &amp; AR 在天猫双11互动中大规模应用</li>
-<li>阿里小蜜 - 移动智能客服前端实践</li>
-<li>大数据下的前端优化实战</li>
-<li>兴趣部落的架构演进与服务优化</li>
-</ul>
-<h4 id="2号厅"><a href="#2号厅" class="headerlink" title="2号厅"></a>2号厅</h4><ul>
-<li>Weex 在双十一会场的大规模应用</li>
-<li>XCore —蘑菇街移动端动态跨平台开发框架</li>
-<li>基于云端真机的无线调试解决方案</li>
-<li>蚂蚁财富的 BFF 实践</li>
-<li>Node.js 在 YunOS 中的最佳实践</li>
-<li>NW.js: 集成DOM和Node.js的编程方式</li>
-<li>从 React 到 ClojureScript</li>
-</ul>
-<h3 id="关于D2"><a href="#关于D2" class="headerlink" title="关于D2"></a>关于D2</h3><blockquote>
-<p>D2前端技术论坛(Designer &amp; Developer Frontend Technology Forum)，简称D2。历时近10年的发展，举办了10届，D2为国内前端领域的开发者和设计者，以及所有对前端技术感兴趣的人提供一个交流的机会，以技术会友，一起分享技术的乐趣，探讨行业的发展。作为国内举办最早的前端技术交流会，D2一直坚持不以盈利为前提，以纯粹的技术交流为根本，拒绝任何商业色彩，共同推动国内前端技术的发展，促进国内行业标准跟国际的融合，发掘前端技术可以创造的更大价值。今年是D2的11届，十届是一次轮回，十一届的主题定为“初心”，近10年来，前端领域风云涌动，移动终端领域突飞猛进，web全栈势不可挡，作为距离用户最近的工程师，我们回望“初心”，不惧未来。</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/20/hello-world/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="renxj">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.gif">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="renxj 的杂记空间">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="renxj 的杂记空间" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/20/hello-world/" itemprop="url">
-                  Hello World
+              <li>
+                <a href="https://github.com/renxj">
+                  
+                  Github
+                  
                 </a>
-              
+              </li>
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+              <li>
+                <a href="mailto:budingfei@126.com">
+                  
+                  Email
+                  
+                </a>
+              </li>
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-20T15:32:02+08:00">
-                2016-12-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-
-          
-
+          </ul>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
-               alt="renxj" />
-          <p class="site-author-name" itemprop="name">renxj</p>
-          <p class="site-description motion-element" itemprop="description">这只是一个习惯的开始~~坚持~</p>
-        </div>
-        <nav class="site-state motion-element">
-        
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-categories">
-              
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">分类</span>
-              
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-        </div>
-
-        
-        
-
-        
-        
-
-        
-
-
-      </section>
-
-      
-
-    </div>
-  </aside>
-
-
-        
       </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2016</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">renxj</span>
-</div>
+    </div>
+  </div>
+</header>
 
 
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
+<!-- Home Page Post List -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-md-10 col-md-offset-1">
+      
+        <div class="post-item-wrapper">
+  <a href="/2016/12/21/冬至/" class="post-title">
+      冬至
   </a>
-</div>
-
-
+  <div class="post-excerpt">
+    <!-- Post Date and Categories -->
+    <div class="date-and-category">
+      <div class="date">2016-12-21</div>
+      <div class="categories">
         
+          
+
+<a href="/categories/life/">生活</a>
 
         
       </div>
-    </footer>
+    </div>
+    <!-- Post Excerpt -->
+    <div class="excerpt typo">暂无文章摘要</div>
+    <!-- Post Tags -->
+    <div class="tags">
+      
+        
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
+<a class="tag" href="/tags/冬至/">冬至</a>
+
+
+      
     </div>
   </div>
+</div>
 
-  
+      
+        <div class="post-item-wrapper">
+  <a href="/2016/12/20/first-blog/" class="post-title">
+      First Blog
+  </a>
+  <div class="post-excerpt">
+    <!-- Post Date and Categories -->
+    <div class="date-and-category">
+      <div class="date">2016-12-20</div>
+      <div class="categories">
+        
+          Uncategorized
+        
+      </div>
+    </div>
+    <!-- Post Excerpt -->
+    <div class="excerpt typo">暂无文章摘要</div>
+    <!-- Post Tags -->
+    <div class="tags">
+      
+        
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+<a class="tag" href="/tags/闲聊/">闲聊</a>
+
+
+      
+    </div>
+  </div>
+</div>
+
+      
+        <div class="post-item-wrapper">
+  <a href="/2016/12/20/hello-world/" class="post-title">
+      Hello World
+  </a>
+  <div class="post-excerpt">
+    <!-- Post Date and Categories -->
+    <div class="date-and-category">
+      <div class="date">2016-12-20</div>
+      <div class="categories">
+        
+          Uncategorized
+        
+      </div>
+    </div>
+    <!-- Post Excerpt -->
+    <div class="excerpt typo">暂无文章摘要</div>
+    <!-- Post Tags -->
+    <div class="tags">
+      
+        
+
+<a class="tag" href="/tags/闲聊/">闲聊</a>
+
+
+      
+    </div>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+</div>
+
+<!-- Pagination -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-md-10 col-md-offset-1">
+      <ul class="pagination">
+          
+          
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
 </script>
 
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
-
-
-
-  
-
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-
-</body>
+  </body>
 </html>
+
