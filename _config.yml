@@ -4,9 +4,11 @@
 
 # Site
 title: renxj 的博客空间 
-subtitle: 当你真的想做好一件事的时候，会遗忘很多，因为对于你来说它就是你的一切。
+subtitle: 当你真的想做好一件事的时候，会遗忘很多，因为它就是你的一切。
 description: 这只是一个习惯的开始~~坚持~
 author: renxj 
+email: budingfei@126.com
+keywords: "前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验"
 language: zh-Hans 
 timezone:
 
@@ -40,7 +42,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace:
 
 # Category & Tag
@@ -76,6 +78,12 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: yilia
 
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git 
+  repo: git@github.com:renxj/renxj.github.io.git
+
 jsonContent:
     meta: false
     pages: false
@@ -94,9 +102,3 @@ jsonContent:
       excerpt: false
       categories: false
       tags: true
-
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git 
-  repo: git@github.com:renxj/renxj.github.io.git
