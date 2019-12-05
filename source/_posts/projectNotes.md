@@ -11,24 +11,38 @@ tags: 工作
     git@git.iqdnet.cn:qdp/qdp-wain-web.git //仓库地址
     npm run dev //运行项目
     npm run build //打包项目
-    npm run copy  //把打包生成的dist文件夹里面 的 static文件和index.html 拷贝到webapp文件里面,然后按照打包后index.html的hash修改 index.jsp里对应的hash值。提交代码
+    npm run copy  //把打包生成的dist文件夹里面 的 static文件和index.html 拷贝到webapp文件里面,
+    然后按照打包后index.html的hash修改 index.jsp里对应的hash值。提交代码
 ```
     
 
 <!-- more -->
 
-### 2.qdp-polaris-webui  标品报表项目 纯前端项目
+### 2.qdp-polaris-webui  融侨报表项目 纯前端项目
 Vue-report 
 ```
     git@git.iqdnet.cn:qdp-h5/qdp-polaris-webui.git //仓库地址
     npm run dev // 运行项目,提测直接提交代码即可
 ```
 
-### 3.qdp-oasis-webui 包含多个项目 纯前端项目
+### 3. qdp-polestar-webui-standard 标品报表
+```
+    git@git.iqdnet.cn:qdp-h5/qdp-polestar-webui-standard.git  
+    npm run dev // 运行项目,提测直接提交代码即可
+```
+  
+### 4.qdp-oasis-webui 包含多个项目 纯前端项目
 ```
     git@git.iqdnet.cn:qdp-h5/qdp-oasis-webui.git //仓库地址
 ```
 vue是老的计费页面 （代码较老，目前只有打印页面在其中）
+    直接解压 node_modules.zip 包，不用 npm 安装依赖 ，
+    webpack.config.js 中，cdnPrefix = "/qdp-oasis-web/webui/vue/",// 
+    本地运行的时候需要置空，打包的时候需要带上
+```
+    node server.js //启动服务
+    npm run dist //打包代码
+```
 
 vueNew是老的计费页面对应新的业务（代码较老，目前只有基础数据部分页面在，没有重构的部分）
 
@@ -39,10 +53,15 @@ Vue-comego是计费往来增强大版的代码
 ```
 
 Vue-basic是计费的基础数据文件夹
+直接解压 node_modules.zip 包，不用 npm 安装依赖，
+```
+    npm run dev //运行项目
+    npm run build //打包代码提交即可
+```
 
 vue-redRush是计费红冲的业务
 
-### 4.qdp-polestar-webui-jianye 建业报表项目
+### 5.qdp-polestar-webui-jianye 建业报表项目
 vue-JY  
 ```
     git@git.iqdnet.cn:qdp-h5/qdp-polestar-webui-jianye.git //仓库地址
@@ -50,7 +69,7 @@ vue-JY
 ```
 
 
-### 5.qdp-rosetta-web 品质管理云
+### 6.qdp-rosetta-web 品质管理云
 Vue 
 ```
     git@git.iqdnet.cn:qdp/qdp-rosetta-web.git //仓库地址
@@ -58,74 +77,10 @@ Vue
     npm run build  打包项目
 ```
 
-### 6.sass 千丁云框架前端项目
-```
-     git@git.iqdnet.cn:FED/saas.git //仓库地址
-
-```
-
-安装redis,启动redis,根目录需要增加config.js
-```
-// eslint-disable-next-line no-console
-// module.exports = {
-//   // 后台接口
-//   // whost: 'https://devwx-api.qdingnet.com',
-//   // whost: 'https://qagw.qdingnet.com',
-//   whost: 'http://qagw.qdingnet.com',
-//   wxhost: 'https://devwx-api.qdingnet.com',
-//   // whost: 'http://10.39.72.243:8080',
-//   // whost: 'https://qawx-api.qdingnet.com',
-//   // whost: 'https://wx-api.qdingnet.com',
-//   // 静态资源cdn
-//   publicPath: 'http://devfront.qdingnet.com/saas-web/dist/',
-//   // publicPath: 'http://devb.qdingnet.com:9003/dist/',
-//   // publicPath: 'https://qafront.qdingnet.com/saas-web/dist/',
-//   // publicPath: 'https://front.qdingnet.com/saas-web/dist/',
-//   mpublicPath: 'http://devfront.qdingnet.com/saas-web/mobile/dist/',
-//   shost: 'https://qacmsp.qdingnet.com',
-//   // shost: 'https://cmsp.qdingnet.com',
-//   watch: true,
-//   // 进程数
-//   cluster: '4',
-//   // REDIS
-//   redis: {
-//     host: '127.0.0.1',
-//     port: '6379',
-//   },
-//   logger: '/Users/renxiaojuan/qianding/saas-master/log/',
-// };
-
-// 建业👇
-module.exports = {
-  // 后台接口
-  // whost: 'https://jygw.jianyewy.com',
-  whost: 'http://qagw.jianyewy.com',
-  // 微信授权
-  wxhost: 'https://qawx-api.jianyewy.com',
-  shost: 'https://qacmsp.jianyewy.com',
-  // 静态资源
-  // publicPath: 'https://jyp.jianyewy.com/saas-web/dist/',
-  publicPath: 'http://devfront.qdingnet.com/saas-web/dist/',
-  mpublicPath: 'https://jyp.jianyewy.com/saas-web/mobile/dist/',
-  watch: true,
-  cluster: '4',
-  redis: {
-    host: '127.0.0.1', // 172.17.20.16
-    port: '6379', // 6380
-  },
-  logger: '/Users/renxiaojuan/qianding/saas/log/',
-};
-```
-运行方法
-```
-npm install yarn -g
-yarn install
-yarn watch //页面
-node server.js //接口调试
-```
-
 ### 7.qdp-meter-web  计量表UI与接口项目
 src/main/webapp/vue 
+webpack.config.js 中，cdnPrefix = "/qdp-oasis-web/webui/vue/",// 
+本地运行的时候需要置空，打包的时候需要带上
 ```
 npm install
 node server.js //启动服务(http://localhost:8090)
@@ -151,9 +106,58 @@ npm run build
 
 ### 9.qdp-JianYe-bigscreen-webui 河南建业BI大屏前端项目地址
 ```
-git@git.iqdnet.cn:qdp-h5/qdp-JianYe-bigscreen-webui.git
+    git@git.iqdnet.cn:qdp-h5/qdp-JianYe-bigscreen-webui.git
 ```
 本地运行index.html 注释document.domain = "jianyewy.com";即可正常运行
+这个项目部署的话需要建业自己部署 他们的git仓库名为 bigscreen
+ 
+```
+    https://bigscreen.jianyewy.com/parkNum.html //线上大屏指标后台录入地址
+    https://bigscreen.jianyewy.com/index.html //建业大屏地址
+```
+ 
+正式环境没有qa,qa环境的时候需要在域名前面加上qa
+
+还有一个假的大屏项目，目前没有git仓库地址，压缩包传递
+
+### 10. qdp-YaHe-bigscreen-webui  雅荷大屏静态资源文件
+```
+    git@git.iqdnet.cn:qdp-h5/qdp-YaHe-bigscreen-webui.git
+```
+
+
+### 11.qdp-echo-webui   回访系统
+```
+    git@git.iqdnet.cn:qdp-h5/qdp-echo-webui.git 
+    npm run dev //运行
+    npm run build //打包
+```
+部署的话需要前端打包不用改东西只需要npm run build
+
+### 12. qdp-pyramid-web 电梯
+```
+    git@git.iqdnet.cn:qdp/qdp-pyramid-web.git
+```
+
+```
+npm run dev
+npm run build
+```
+vue 项目对应webapp文件夹里面index.html
+vuenew 项目对应webapp文件件里面的indexnew.html 
+都需要前端打包，打包后的文件替换到webap文件夹里面，然后修改对应html后面的时间
+
+### 13. qdp-spot-check-webui 品质抽查
+```
+    git@git.iqdnet.cn:qdp-h5/qdp-spot-check-webui.git
+    npm run dev //运行
+    npm run build //打包
+```
+ 
+ 
+
+
+
 
 
 
