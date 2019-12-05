@@ -158,6 +158,93 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-saas" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/05/saas/">sass 千丁云框架前端项目</a>
+    </h1>
+  
+
+        
+        <a href="/2019/12/05/saas/" class="archive-article-date">
+  	<time datetime="2019-12-05T06:30:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git@git<span class="selector-class">.iqdnet</span><span class="selector-class">.cn</span>:FED/saas<span class="selector-class">.git</span> <span class="comment">//仓库地址 标品release分支 建业saas_jianye_private_wy分支</span></div></pre></td></tr></table></figure>
+<h4 id="环境准备工作"><a href="#环境准备工作" class="headerlink" title="环境准备工作"></a>环境准备工作</h4><ul>
+<li><p>根目录需要增加config.js，配置分为标品和建业，内容如下</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line"><span class="regexp">//</span> 标品</div><div class="line"><span class="regexp">//</span> module.exports = &#123;</div><div class="line"><span class="regexp">//</span>   <span class="regexp">//</span> 后台接口</div><div class="line"><span class="regexp">//</span>   <span class="regexp">//</span> whost: <span class="string">'https://devwx-api.qdingnet.com'</span>,</div><div class="line"><span class="regexp">//</span>   <span class="regexp">//</span> whost: <span class="string">'https://qagw.qdingnet.com'</span>,</div><div class="line"><span class="regexp">//</span>   whost: <span class="string">'http://qagw.qdingnet.com'</span>,</div><div class="line"><span class="regexp">//</span>   wxhost: <span class="string">'https://devwx-api.qdingnet.com'</span>,</div><div class="line"><span class="regexp">//</span>   <span class="regexp">//</span> whost: <span class="string">'http://10.39.72.243:8080'</span>,</div><div class="line"><span class="regexp">//</span>   <span class="regexp">//</span> whost: <span class="string">'https://qawx-api.qdingnet.com'</span>,</div><div class="line"><span class="regexp">//</span>   <span class="regexp">//</span> whost: <span class="string">'https://wx-api.qdingnet.com'</span>,</div><div class="line"><span class="regexp">//</span>   <span class="regexp">//</span> 静态资源cdn</div><div class="line"><span class="regexp">//</span>   publicPath: <span class="string">'http://devfront.qdingnet.com/saas-web/dist/'</span>,</div><div class="line"><span class="regexp">//</span>   <span class="regexp">//</span> publicPath: <span class="string">'http://devb.qdingnet.com:9003/dist/'</span>,</div><div class="line"><span class="regexp">//</span>   <span class="regexp">//</span> publicPath: <span class="string">'https://qafront.qdingnet.com/saas-web/dist/'</span>,</div><div class="line"><span class="regexp">//</span>   <span class="regexp">//</span> publicPath: <span class="string">'https://front.qdingnet.com/saas-web/dist/'</span>,</div><div class="line"><span class="regexp">//</span>   mpublicPath: <span class="string">'http://devfront.qdingnet.com/saas-web/mobile/dist/'</span>,</div><div class="line"><span class="regexp">//</span>   shost: <span class="string">'https://qacmsp.qdingnet.com'</span>,</div><div class="line"><span class="regexp">//</span>   <span class="regexp">//</span> shost: <span class="string">'https://cmsp.qdingnet.com'</span>,</div><div class="line"><span class="regexp">//</span>   watch: true,</div><div class="line"><span class="regexp">//</span>   <span class="regexp">//</span> 进程数</div><div class="line"><span class="regexp">//</span>   cluster: <span class="string">'4'</span>,</div><div class="line"><span class="regexp">//</span>   <span class="regexp">//</span> REDIS</div><div class="line"><span class="regexp">//</span>   redis: &#123;</div><div class="line"><span class="regexp">//</span>     host: <span class="string">'127.0.0.1'</span>,</div><div class="line"><span class="regexp">//</span>     port: <span class="string">'6379'</span>,</div><div class="line"><span class="regexp">//</span>   &#125;,</div><div class="line"><span class="regexp">//</span>   logger: <span class="string">'/Users/renxiaojuan/qianding/saas-master/log/'</span>,</div><div class="line"><span class="regexp">//</span> &#125;;</div><div class="line"></div><div class="line"><span class="regexp">//</span> 建业👇</div><div class="line">module.exports = &#123;</div><div class="line">  <span class="regexp">//</span> 后台接口</div><div class="line">  <span class="regexp">//</span> whost: <span class="string">'https://jygw.jianyewy.com'</span>,</div><div class="line">  whost: <span class="string">'http://qagw.jianyewy.com'</span>,</div><div class="line">  <span class="regexp">//</span> 微信授权</div><div class="line">  wxhost: <span class="string">'https://qawx-api.jianyewy.com'</span>,</div><div class="line">  shost: <span class="string">'https://qacmsp.jianyewy.com'</span>,</div><div class="line">  <span class="regexp">//</span> 静态资源</div><div class="line">  <span class="regexp">//</span> publicPath: <span class="string">'https://jyp.jianyewy.com/saas-web/dist/'</span>,</div><div class="line">  publicPath: <span class="string">'http://devfront.qdingnet.com/saas-web/dist/'</span>,</div><div class="line">  mpublicPath: <span class="string">'https://jyp.jianyewy.com/saas-web/mobile/dist/'</span>,</div><div class="line">  watch: true,</div><div class="line">  cluster: <span class="string">'4'</span>,</div><div class="line">  redis: &#123;</div><div class="line">    host: <span class="string">'127.0.0.1'</span>, <span class="regexp">//</span> <span class="number">172.17</span>.<span class="number">20.16</span></div><div class="line">    port: <span class="string">'6379'</span>, <span class="regexp">//</span> <span class="number">6380</span></div><div class="line">  &#125;,</div><div class="line">  logger: <span class="string">'/Users/renxiaojuan/qianding/saas/log/'</span>,</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+</li>
+<li><p>安装redis,启动redis,</p>
+</li>
+<li><p>安装nginx,配置nginx,配置文件如下</p>
+  <figure class="highlight nginx"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#======qianding-sass  start========= </span></div><div class="line"><span class="section">server</span> &#123;</div><div class="line">    <span class="attribute">listen</span> <span class="number">80</span>;</div><div class="line">    <span class="attribute">server_name</span> front.qdingnet.com devfront.qdingnet.com qafront.qdingnet.com;</div><div class="line">    <span class="attribute">autoindex</span> <span class="literal">on</span>;</div><div class="line">    <span class="attribute">add_header</span> Access-Control-Allow-Origin *;</div><div class="line">    <span class="attribute">location</span> /public/ &#123;</div><div class="line">        <span class="attribute">alias</span> /Users/renxiaojuan/qianding/qding-boss/front/public/;</div><div class="line">        <span class="attribute">index</span> index.html;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="attribute">location</span> /saas-web/ &#123;</div><div class="line">      <span class="attribute">alias</span> /Users/renxiaojuan/qianding/saas/;  <span class="comment">#改成自己的项目路径</span></div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="attribute">location</span> / &#123;</div><div class="line">        <span class="attribute">rewrite</span><span class="regexp"> ^/([\w-]+)/(.*)$</span> /<span class="variable">$1</span>/temp/<span class="variable">$2</span> <span class="literal">break</span>;</div><div class="line">        <span class="attribute">root</span> /Users/renxiaojuan/qianding/qding-boss/front/; <span class="comment">#改成自己的项目路径</span></div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="section">server</span> &#123;</div><div class="line">  <span class="attribute">listen</span>  <span class="number">80</span>;</div><div class="line">  <span class="attribute">server_name</span>  dev.qdingnet.com dev.jianyewy.com;</div><div class="line">  <span class="comment">#server_name  localhost;</span></div><div class="line">  <span class="attribute">location</span> / &#123;</div><div class="line">    <span class="attribute">proxy_pass</span> http://localhost:9003;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>hosts文件增加 127.0.0.1  dev.qdingnet.com dev.jianyewy.com devfront.qdingnet.com        </p>
+</li>
+</ul>
+<h4 id="运行方法"><a href="#运行方法" class="headerlink" title="运行方法"></a>运行方法</h4><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm install yarn -g</div><div class="line">yarn install</div><div class="line">yarn watch //页面</div><div class="line"><span class="keyword">node</span> <span class="title">server</span>.js //接口调试</div></pre></td></tr></table></figure>
+<h4 id="发布部署"><a href="#发布部署" class="headerlink" title="发布部署"></a>发布部署</h4><p>直接提交代码即可</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">工作</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/生活/" class="article-tag-list-link color3">生活</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/12/05/saas/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-projectNotes" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -178,7 +265,7 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-qdp-wain-web-CRM云-前后端在同一个仓库里面"><a href="#1-qdp-wain-web-CRM云-前后端在同一个仓库里面" class="headerlink" title="1.qdp-wain-web   CRM云 前后端在同一个仓库里面"></a>1.qdp-wain-web   CRM云 前后端在同一个仓库里面</h3><p>前端项目在 src/main/vue-order<br><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git@git.iqdnet.cn:qdp/qdp-wain-web.git //仓库地址</div><div class="line">npm <span class="keyword">run</span><span class="bash"> dev //运行项目</span></div><div class="line"><span class="bash">npm run build //打包项目</span></div><div class="line"><span class="bash">npm run copy  //把打包生成的dist文件夹里面 的 static文件和index.html 拷贝到webapp文件里面,然后按照打包后index.html的<span class="built_in">hash</span>修改 index.jsp里对应的<span class="built_in">hash</span>值。提交代码</span></div></pre></td></tr></table></figure></p>
+        <h3 id="1-qdp-wain-web-CRM云-前后端在同一个仓库里面"><a href="#1-qdp-wain-web-CRM云-前后端在同一个仓库里面" class="headerlink" title="1.qdp-wain-web   CRM云 前后端在同一个仓库里面"></a>1.qdp-wain-web   CRM云 前后端在同一个仓库里面</h3><p>前端项目在 src/main/vue-order<br><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git@git.iqdnet.cn:qdp/qdp-wain-web.git //仓库地址</div><div class="line">npm <span class="keyword">run</span><span class="bash"> dev //运行项目</span></div><div class="line"><span class="bash">npm run build //打包项目</span></div><div class="line"><span class="bash">npm run copy  //把打包生成的dist文件夹里面 的 static文件和index.html 拷贝到webapp文件里面,</span></div><div class="line"><span class="bash">然后按照打包后index.html的<span class="built_in">hash</span>修改 index.jsp里对应的<span class="built_in">hash</span>值。提交代码</span></div></pre></td></tr></table></figure></p>
         
           <a class="article-more-a" href="/2019/12/04/projectNotes/#more">more >></a>
         
@@ -783,15 +870,15 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工作</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">生活</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">读书</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工作</a>
               </li>
             
             <div class="clearfix"></div>
