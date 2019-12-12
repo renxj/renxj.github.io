@@ -313,21 +313,23 @@
   
 
   
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
-<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+  {% if site.comment_gitment_repo %}
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
+<script src="https://billts.site/js/gitment.js"></script>
 <script>
-var gitment = new Gitment({
-  id: "https://renxj.github.io/2016/12/20/hello-world/",
-  owner: 'renxj',
-  repo: 'wxdemo',
-  oauth: {
-    client_id: 'af03f96e27d02376e0aa',
-    client_secret: '1e6b00dbe461ac7ae9b2752a3bf4ce66cd580a70',
-  },
-})
-gitment.render('gitment-ctn')
+    var gitment = new Gitment({
+        id: 'Tue Dec 20 2016 11:15:00 GMT+0800',
+        owner: '{{site.github_username}}',
+        repo: '{{site.comment_gitment_repo}}',
+        oauth: {
+            client_id: '{{site.comment_gitment_clientId}}',
+            client_secret: '{{site.comment_gitment_clientSecret}}',
+        },
+    });
+    gitment.render('gitmentContainer')
 </script>
+{% endif %}
   
 
 
