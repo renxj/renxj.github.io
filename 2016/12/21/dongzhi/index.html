@@ -48,7 +48,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://dbike-dev.oss-cn-hangzhou.aliyuncs.com/uploadFile/1506157301648" class="js-avatar">
+			<img src="https://dbike-dev.oss-cn-hangzhou.aliyuncs.com/uploadFile/1506157301648" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">renxj</a></h1>
@@ -104,7 +104,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://dbike-dev.oss-cn-hangzhou.aliyuncs.com/uploadFile/1506157301648" class="js-avatar">
+				<img src="https://dbike-dev.oss-cn-hangzhou.aliyuncs.com/uploadFile/1506157301648" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">renxj</h1>
@@ -318,23 +318,21 @@
   
 
   
-  {% if site.comment_gitment_repo %}
-<div id="gitmentContainer"></div>
-<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
-<script src="https://billts.site/js/gitment.js"></script>
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
-    var gitment = new Gitment({
-        id: 'Wed Dec 21 2016 11:22:24 GMT+0800',
-        owner: '{{site.github_username}}',
-        repo: '{{site.comment_gitment_repo}}',
-        oauth: {
-            client_id: '{{site.comment_gitment_clientId}}',
-            client_secret: '{{site.comment_gitment_clientSecret}}',
-        },
-    });
-    gitment.render('gitmentContainer')
+var gitment = new Gitment({
+  id: "https://renxj.github.io/2016/12/21/dongzhi/",
+  owner: 'renxj',
+  repo: 'wxdemo',
+  oauth: {
+    client_id: 'af03f96e27d02376e0aa',
+    client_secret: '1e6b00dbe461ac7ae9b2752a3bf4ce66cd580a70',
+  },
+})
+gitment.render('gitment-ctn')
 </script>
-{% endif %}
   
 
 
